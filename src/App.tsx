@@ -4,15 +4,7 @@ import {
   Play,
   Radio,
   Headphones,
-  TrendingUp,
-  Users,
-  DollarSign,
-  CheckCircle,
-  ArrowRight,
-  Mail,
   Disc3,
-  BarChart3,
-  Globe,
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -56,20 +48,16 @@ const platforms = [
 
 const steps = [
   {
-    title: "Upload your track",
-    description: "Drop your audio, artwork and release info in one simple submission form.",
+    title: "Choose your platform",
+    description: "Decide which streaming platform you want to get playlisted on.",
   },
   {
-    title: "Pick your platforms",
-    description: "Choose where you want playlist placement: Spotify, Apple Music, YouTube, Audiomack or Tunenova.",
+    title: "Send your song link and budget",
+    description: "Message us with your track and the budget you have in mind.",
   },
   {
-    title: "Get reviewed",
-    description: "Our curators and A&R team review every submission for quality and fit.",
-  },
-  {
-    title: "Grow & get paid",
-    description: "Watch streams climb, build your audience and withdraw earnings to your bank.",
+    title: "Get playlisted",
+    description: "We handle the pitch and place your music on curated playlists.",
   },
 ]
 
@@ -77,32 +65,26 @@ const benefits = [
   {
     title: "Reach new fans",
     description: "Place your music in front of listeners already vibing to your genre.",
-    icon: Users,
   },
   {
     title: "Boost algorithmic growth",
     description: "Playlist adds send strong signals that unlock recommendations and editorial looks.",
-    icon: TrendingUp,
   },
   {
     title: "Monetize every stream",
     description: "Turn playlist exposure into royalties, sync opportunities and paid communities.",
-    icon: DollarSign,
   },
   {
     title: "Track real results",
     description: "See streams, saves and audience growth in a clean creator dashboard.",
-    icon: BarChart3,
   },
   {
     title: "Global distribution",
     description: "Promote across African, US, UK and international playlist networks.",
-    icon: Globe,
   },
   {
     title: "Creator support",
     description: "Get hands-on help from a team that understands independent artists.",
-    icon: CheckCircle,
   },
 ]
 
@@ -125,10 +107,9 @@ function Index() {
             </a>
           </nav>
           <div className="flex items-center gap-3">
-            <Button variant="outline" size="sm" className="hidden sm:inline-flex">
-              Talk to us
-            </Button>
-            <Button size="sm">Start campaign</Button>
+            <a href="https://wa.me/2348056679806" target="_blank" rel="noopener noreferrer">
+              <Button size="sm">Get playlisted</Button>
+            </a>
           </div>
         </div>
       </header>
@@ -152,36 +133,21 @@ function Index() {
               </h1>
               <p className="mt-6 text-lg text-muted-foreground sm:text-xl">
                 Submit once. Get heard on Spotify, Apple Music, YouTube, Audiomack and Tunenova. We help
-                creators turn streams into fans — and fans into income.
+                creators turn streams into fans and fans into income.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
-                <Button size="lg" className="gap-2">
-                  Start your playlist campaign <ArrowRight className="h-4 w-4" />
-                </Button>
-                <Button variant="outline" size="lg" className="gap-2">
-                  <Mail className="h-4 w-4" /> Talk to the team
-                </Button>
-              </div>
-              <div className="mt-10 flex items-center gap-6 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-primary" />
-                  Zero monthly fees
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-primary" />
-                  Fast payouts
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-primary" />
-                  Secure hosting
-                </div>
+                <a href="https://wa.me/2348056679806" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="gap-2">
+                    Get playlisted
+                  </Button>
+                </a>
               </div>
             </div>
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl border border-border bg-surface glow-brand">
                 <img
                   src={heroImage}
-                  alt="Red soundwaves and vinyl record on a black background"
+                  alt="Red soundwaves and vinyl record on a white background"
                   width={1344}
                   height={768}
                   className="w-full object-cover"
@@ -198,8 +164,8 @@ function Index() {
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <div className="grid gap-8 text-center sm:grid-cols-2">
             <div>
-              <div className="text-4xl font-extrabold text-primary sm:text-5xl">₦100M+</div>
-              <p className="mt-2 text-sm text-muted-foreground">Generated for creators</p>
+              <div className="text-4xl font-extrabold text-primary sm:text-5xl">100M+</div>
+              <p className="mt-2 text-sm text-muted-foreground">Streams generated for artists</p>
             </div>
             <div>
               <div className="text-4xl font-extrabold text-foreground sm:text-5xl">5</div>
@@ -249,10 +215,10 @@ function Index() {
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">How playlist promotion works</h2>
             <p className="mt-4 text-muted-foreground">
-              From upload to playlist placement in four simple steps.
+              From upload to playlist placement in three simple steps.
             </p>
           </div>
-          <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {steps.map((step, index) => (
               <div key={step.title} className="relative">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary font-bold text-primary-foreground">
@@ -280,21 +246,14 @@ function Index() {
                 Soundhalla gives you the tools, network and support to turn a single release into a
                 growing career.
               </p>
-              <Button size="lg" className="mt-8 gap-2">
-                Start selling now <ArrowRight className="h-4 w-4" />
-              </Button>
             </div>
             <div className="grid gap-6 sm:grid-cols-2">
-              {benefits.map((benefit) => {
-                const Icon = benefit.icon
-                return (
-                  <div key={benefit.title} className="rounded-2xl border border-border bg-surface p-5">
-                    <Icon className="h-6 w-6 text-primary" />
-                    <h3 className="mt-4 font-semibold">{benefit.title}</h3>
-                    <p className="mt-2 text-sm text-muted-foreground">{benefit.description}</p>
-                  </div>
-                )
-              })}
+              {benefits.map((benefit) => (
+                <div key={benefit.title} className="rounded-2xl border border-border bg-surface p-5">
+                  <h3 className="font-semibold">{benefit.title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{benefit.description}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -314,12 +273,11 @@ function Index() {
                 audience and get paid for their work.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-4">
-                <Button size="lg" className="gap-2">
-                  Start selling now <ArrowRight className="h-4 w-4" />
-                </Button>
-                <Button variant="outline" size="lg" className="gap-2">
-                  <Mail className="h-4 w-4" /> Talk to us
-                </Button>
+                <a href="https://wa.me/2348056679806" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="gap-2">
+                    Get playlisted
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
