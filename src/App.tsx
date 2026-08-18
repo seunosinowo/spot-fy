@@ -302,6 +302,9 @@ function Index() {
               <a href="https://wa.me/2348056679806" className="transition-colors hover:text-foreground">
                 +234 805 667 9806
               </a>
+              <a href="mailto:Support@soundhalla.com" className="transition-colors hover:text-foreground">
+                support@soundhalla.com
+              </a>
             </div>
           </div>
         </div>
