@@ -12,7 +12,7 @@ import heroImage from "@/assets/hero-playlist.jpg"
 
 function BrandName() {
   return (
-    <Link to="/" className="text-lg font-bold tracking-wider text-foreground transition-opacity hover:opacity-90">
+    <Link to="/" className="text-lg font-bold tracking-wider text-primary transition-opacity hover:opacity-90">
       SOUNDHALLA
     </Link>
   )
@@ -126,14 +126,14 @@ function Index() {
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
                 </span>
-                Playlist promotion for independent creators
+                Playlist promotion for independent Artists
               </div>
               <h1 className="mt-6 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
                 Get your music <span className="text-primary">playlisted</span> on the platforms that matter.
               </h1>
               <p className="mt-6 text-lg text-muted-foreground sm:text-xl">
                 Submit once. Get heard on Spotify, Apple Music, YouTube, Audiomack and Tunenova. We help
-                creators turn streams into fans and fans into income.
+                Artists turn streams into fans and fans into income.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <a href="https://wa.me/2348056679806" target="_blank" rel="noopener noreferrer">
@@ -240,7 +240,7 @@ function Index() {
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                Built for creators who want more than streams
+                Built for Artists who want more than streams
               </h2>
               <p className="mt-4 text-muted-foreground">
                 Soundhalla gives you the tools, network and support to turn a single release into a
@@ -269,7 +269,7 @@ function Index() {
                 Ready to get your music heard?
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-                Join thousands of creators using Soundhalla to land playlist placements, grow their
+                Join thousands of Artists using Soundhalla to land playlist placements, grow their
                 audience and get paid for their work.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -290,7 +290,7 @@ function Index() {
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <BrandName />
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Soundhalla. Made for digital creators.
+              © {new Date().getFullYear()} Soundhalla. Helping Artists Get Heard.
             </p>
             <div className="flex items-center gap-6 text-sm text-muted-foreground">
               <a href="#" className="transition-colors hover:text-foreground">
@@ -299,8 +299,8 @@ function Index() {
               <a href="#" className="transition-colors hover:text-foreground">
                 Terms
               </a>
-              <a href="#" className="transition-colors hover:text-foreground">
-                Contact
+              <a href="https://wa.me/2348056679806" className="transition-colors hover:text-foreground">
+                +234 805 667 9806
               </a>
             </div>
           </div>
